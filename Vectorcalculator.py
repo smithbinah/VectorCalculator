@@ -21,12 +21,11 @@ class Vector:
     def unit_vector(self):
         for x, y in self.vector.items():
             answer = self.unitVector[str((1/self.magnitude) * x)] = (1/self.magnitude) * y
-            print((1/self.magnitude) * x)
-            print((1/self.magnitude) * y)
+            print("unit vector x: " +str((1/self.magnitude) * x))
+            print("unit vector y: " +str((1/self.magnitude) * y))
         return answer
 
                      
             
 v1 = Vector(2,3)
-print(v1.magnitude)
-print(v1.unitVector)
+print("Magnitude: " +str(v1.magnitude))
